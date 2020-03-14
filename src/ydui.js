@@ -46,7 +46,7 @@ import {Preview, PreviewHeader, PreviewItem} from './components/preview';
 window.document.addEventListener('touchstart', function (event) {
     /* Do Nothing */
 }, false);
-
+//全局注册
 const install = function (Vue) {
     Vue.component(Layout.name, Layout);
     Vue.component(Button.name, Button);
@@ -125,6 +125,7 @@ const install = function (Vue) {
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
+    //全局注册
     install(window.Vue);
 }
 

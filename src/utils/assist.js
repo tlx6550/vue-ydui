@@ -16,7 +16,7 @@ const pageScroll = (function () {
             (el || document).removeEventListener('touchmove', fn);
         }
     };
-})();
+})();//立即执行函数 声明同时 开始执行 返回一个对象
 
 const preventScroll = (function () {
     return {
